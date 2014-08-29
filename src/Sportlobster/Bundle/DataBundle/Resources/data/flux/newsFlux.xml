@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?> 
+<news> 
+  <flux>
+
+    <item>
+      <title>sky1</title>
+      <enabled>true</enabled>
+      <catagories>
+        <catagory>football</catagory>
+      </catagories>
+      <params>
+        <protocol>http</protocol>
+        <url>http://www.skysports.com/rss/0,20514,11661,00.xml</url>
+      </params>
+    </item>
+
+    <item>
+      <title>Lequipe</title>
+      <enabled>true</enabled>
+      <catagories>
+        <catagory>football</catagory>
+      </catagories>
+      <params>
+        <protocol>http</protocol>
+        <url>http://www.lequipe.fr/rss/actu_rss_Football.xml</url>
+      </params>
+    </item>
+
+  </flux>
+</news>

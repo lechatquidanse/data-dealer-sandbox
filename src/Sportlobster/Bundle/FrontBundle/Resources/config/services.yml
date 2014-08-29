@@ -1,0 +1,7 @@
+parameters:
+#    sportlobster_front.example.class: Sportlobster\Bundle\FrontBundle\Example
+
+services:
+#    sportlobster_front.example:
+#        class: %sportlobster_front.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

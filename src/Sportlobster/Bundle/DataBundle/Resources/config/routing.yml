@@ -1,0 +1,3 @@
+sportlobster_data_homepage:
+    path:     /
+    defaults: { _controller: SportlobsterDataBundle:Default:index }

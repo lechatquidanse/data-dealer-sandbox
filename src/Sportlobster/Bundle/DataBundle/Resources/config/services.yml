@@ -1,0 +1,8 @@
+parameters:
+    sportlobster_data.news_manager.class: Sportlobster\Bundle\DataBundle\Model\NewsManager
+
+services:
+    sportlobster_data.news_manager:
+        class: %sportlobster_data.news_manager.class%
+        arguments: []
+        #[@service_id, "plain_value", %parameter%]
