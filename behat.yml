@@ -1,0 +1,8 @@
+default:
+    # ...
+    extensions:
+        Behat\Symfony2Extension: ~
+    suites:
+        sportlobster:
+            type: symfony_bundle
+            bundle: 'SportlobsterFrontBundle'
