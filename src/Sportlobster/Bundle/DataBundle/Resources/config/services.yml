@@ -1,8 +1,11 @@
 parameters:
-    sportlobster_data.news_manager.class: Sportlobster\Bundle\DataBundle\Model\NewsManager
+    sportlobster_data.data_loader.class: Sportlobster\Bundle\DataBundle\Loader\DataLoader
+    sportlobster_data.news_manager.class: Sportlobster\Bundle\DataBundle\Manager\NewsManager
 
 services:
+    sportlobster_data.data_loader:
+        class: %sportlobster_data.data_loader.class%
+        arguments: [@logger]
     sportlobster_data.news_manager:
         class: %sportlobster_data.news_manager.class%
-        arguments: []
-        #[@service_id, "plain_value", %parameter%]
+        arguments: [@sportlobster_data.data_loader]

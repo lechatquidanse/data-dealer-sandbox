@@ -1,3 +1,11 @@
 sportlobster_front_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: SportlobsterFrontBundle:Default:index }
+    path:     /
+    defaults: { _controller: SportlobsterFrontBundle:Home:index }
+
+sportlobster_front_category:
+    path:     /{category}
+    defaults: { _controller: SportlobsterFrontBundle:Category:index }
+
+sportlobster_front_category_type:
+    path:     /{category}/{type}
+    defaults: { _controller: SportlobsterFrontBundle:Category:type }

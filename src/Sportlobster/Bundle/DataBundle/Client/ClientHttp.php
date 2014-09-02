@@ -47,12 +47,17 @@ class ClientHttp extends Client implements ClientInterface
 
             case 'application/rss+xml':
             case 'application/xml':
-                $xml = $this->response->xml();
-                return $xml;
+            
+                return $this->response->xml();
+                break;
+
+            case 'application/json':
+            
+                return $this->response->json();
                 break;
             
             default:
-                # code...
+                return array();
                 break;
         }
     }

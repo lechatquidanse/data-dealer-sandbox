@@ -1,7 +1,3 @@
-sportlobster_data:
-    resource: "@SportlobsterDataBundle/Resources/config/routing.yml"
-    prefix:   /sport
-
 sportlobster_front:
     resource: "@SportlobsterFrontBundle/Resources/config/routing.yml"
     prefix:   /

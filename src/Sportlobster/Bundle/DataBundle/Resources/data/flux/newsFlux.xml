@@ -4,10 +4,7 @@
 
     <item>
       <title>sky1</title>
-      <enabled>true</enabled>
-      <catagories>
-        <catagory>football</catagory>
-      </catagories>
+        <category>football</category>
       <params>
         <protocol>http</protocol>
         <url>http://www.skysports.com/rss/0,20514,11661,00.xml</url>
@@ -16,13 +13,10 @@
 
     <item>
       <title>Lequipe</title>
-      <enabled>true</enabled>
-      <catagories>
-        <catagory>football</catagory>
-      </catagories>
+        <category>basketball</category>
       <params>
         <protocol>http</protocol>
-        <url>http://www.lequipe.fr/rss/actu_rss_Football.xml</url>
+        <url>http://www.lequipe.fr/rss/actu_rss_Basket.xml</url>
       </params>
     </item>
 

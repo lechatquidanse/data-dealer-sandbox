@@ -1,0 +1,15 @@
+{% extends "SportlobsterFrontBundle::layout.html.twig" %}
+
+{% block content %}
+	
+	<div class="row starter-template">
+		<div class="span9">
+			<ul>
+				<li><a href="{{ path('sportlobster_front_category', {'category': 'football'}) }}">Football</a></li>
+				<li><a href="{{ path('sportlobster_front_category_type', {'category': 'football', 'type': 'report'}) }}">Football Report</a></li>
+				<li><a href="{{ path('sportlobster_front_category', {'category': 'basketball'}) }}">Basketball</a></li>
+			</ul>
+		</div>
+	</div>
+
+{% endblock %}
