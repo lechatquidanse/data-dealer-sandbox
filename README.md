@@ -9,9 +9,6 @@ You can find more technical informations [here][2].
 1) Installing
 ----------------------------------
 
-When it comes to installing the Symfony Standard Edition, you have the
-following options.
-
 ### Clone the repository
 
     git clone https://github.com/lechatquidanse/data-dealer-sandbox.git
