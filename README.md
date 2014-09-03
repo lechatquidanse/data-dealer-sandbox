@@ -3,7 +3,7 @@ Data-Dealer-sandbox
 
 This sandbox display data on webpage from sources (such as rss feed, etc...).
 Based on the latest symfony2 edition, it includes a vagrant environnement, unit tests and functionnal tests.
-For the moment it displays news from rss feeds that are defined in [this xml file][1]
+For the moment it displays news from rss feeds that are defined in [this xml file][1].
 You can find more technical informations [here][2].
 
 1) Installing
