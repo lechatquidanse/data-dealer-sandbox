@@ -3,17 +3,16 @@
 {% block content %}
 	
 	<div class="row starter-template">
+		<h1>News {{ category }} : {{ type }} </h1>
 		<div class="span9">
 		{% for item in collection %}
-
 			{% if type == item.category|lower %}
 				<div class="span4">
 					<h2>{{ item.title|raw }}</h2>
 					<p>{{ item.description|raw }}</p>
-					{#<p><a class="btn btn-default" href="#" role="button"></a></p>#}
 				</div>
+				<hr/>
 			{% endif %}
-
 		{% endfor %}
 		</div>
 	</div>

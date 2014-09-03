@@ -25,6 +25,6 @@ class CategoryController extends Controller
         );
         $collection = $newsManager->load($params);
 
-        return $this->render('SportlobsterFrontBundle:Category:type.html.twig', array('collection' => $collection, 'category' => $category, 'type' => $type));
+        return $this->render('SportlobsterFrontBundle:Category:type.html.twig', array('collection' => $collection, 'category' => $category, 'type' => urldecode($type)));
     }
 }

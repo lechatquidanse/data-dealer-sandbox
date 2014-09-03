@@ -3,6 +3,7 @@
 {% block content %}
 	
 	<div class="row starter-template">
+		<h1>News {{ category }}</h1>
 		<div class="span9">
 		{% for item in collection %}
 
@@ -13,10 +14,9 @@
 					<h2>{{ item.title|raw }}</h2>
 					<p>{{ item.description|raw }}</p>
 					<p class="small">{{ item.pupDate|date('Y-m-d H:i')}}</p>
-					{% if 'report' == item_type %}
-					<p><a class="btn btn-default" href="{{ path('sportlobster_front_category_type', {'category': category, 'type': 'report'}) }}" role="button">View all {{ item_type }}</a></p>
-					{% endif %}
+					<p><a class="btn btn-default" href="{{ path('sportlobster_front_category_type', {'category': category, 'type': item_type|url_encode }) }}" role="button">View all {{ item_type }}</a></p>
 				</div>
+				<hr/>
 			{% endif %}
 
 		{% endfor %}
