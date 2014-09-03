@@ -9,7 +9,7 @@ This bundle allowed your website to get Data from any platform you want.
 Technical Process
 --------------------
 
-A [DataManager][0] is declared as 
+A DataManager_. is declared as 
 
 Key Features include:
 
@@ -23,5 +23,5 @@ Key Features include:
   to re-type many command line arguments/options
 - Web-based UI for easier translation of messages
 
-[0]: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Manager/DataManager.php
+.. _DataManager: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Manager/DataManager.php
 
