@@ -13,7 +13,7 @@ class CategoryController extends Controller
             'category' => array($category)
         );
         $collection = $newsManager->load($params);
-
+        
         return $this->render('SportlobsterFrontBundle:Category:index.html.twig', array('collection' => $collection, 'category' => $category, 'exclude_type' => 'report'));
     }
 

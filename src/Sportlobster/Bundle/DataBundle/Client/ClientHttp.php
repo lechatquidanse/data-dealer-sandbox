@@ -8,8 +8,16 @@ use Sportlobster\Bundle\DataBundle\Client\ClientInterface;
 
 class ClientHttp extends Client implements ClientInterface
 {
+    /**
+     * $response response returned by request
+     * 
+     * @var ResponseInterface
+     */
     protected $response;
 
+    /**
+     * {@inheritdoc}
+     */
     public function getStatusCode()
     {
         if ($this->response instanceof ResponseInterface) {
@@ -17,6 +25,10 @@ class ClientHttp extends Client implements ClientInterface
             return $this->response->getStatusCode();
         }
     }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getHeader($header, $asArray = false)
     {
         if ($this->response instanceof ResponseInterface) {
@@ -24,6 +36,10 @@ class ClientHttp extends Client implements ClientInterface
             return $this->response->getHeader($header, $asArray = false);
         }
     }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getBody()
     {
         if ($this->response instanceof ResponseInterface) {
@@ -32,6 +48,9 @@ class ClientHttp extends Client implements ClientInterface
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function get($url = null, $options = [])
     {
         $this->response = parent::get($url, $options);
@@ -39,6 +58,9 @@ class ClientHttp extends Client implements ClientInterface
         return $this->response;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function getContents()
     {
         $contentType = $this->getHeader('content-type');
@@ -62,6 +84,9 @@ class ClientHttp extends Client implements ClientInterface
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function getResponse()
     {
         return $this->response;

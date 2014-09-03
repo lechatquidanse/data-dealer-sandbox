@@ -3,7 +3,7 @@
   <flux>
 
     <item>
-      <title>sky1</title>
+      <title>sky-eng</title>
         <category>football</category>
       <params>
         <protocol>http</protocol>
@@ -12,11 +12,20 @@
     </item>
 
     <item>
-      <title>Lequipe</title>
+      <title>sky-all</title>
+        <category>football</category>
+      <params>
+        <protocol>http</protocol>
+        <url>http://www.skysports.com/rss/0,20514,12003,00.xml</url>
+      </params>
+    </item>
+
+    <item>
+      <title>sky-basket</title>
         <category>basketball</category>
       <params>
         <protocol>http</protocol>
-        <url>http://www.lequipe.fr/rss/actu_rss_Basket.xml</url>
+        <url>http://www.skysports.com/rss/0,20514,12375,00.xml</url>
       </params>
     </item>
 

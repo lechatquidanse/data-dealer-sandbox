@@ -100,7 +100,7 @@ class DataLoader
         $category = isset($params['category']) ? $params['category'] : null;
         $fluxTitle = isset($params['flux']) ? $params['flux'] : null;
 
-        foreach ($dataFluxParams as $key => $flux) {
+        foreach ($dataFluxParams->item as $key => $flux) {
             
             if (!$category && !$fluxTitle) {
                 
@@ -138,7 +138,7 @@ class DataLoader
             }
             libxml_use_internal_errors($previous);
 
-            return $xml->flux->item;
+            return $xml->flux;
         } catch (\Exception $e) {
             
             $this->logger->error('DataLoader: ' . $e->getMessage());
@@ -158,7 +158,6 @@ class DataLoader
     {
         $dataFluxParams = $this->loadDataFluxParams($resources);
         $dataFluxSelected = $this->selectDataFlux($dataFluxParams, $params);
-        
         $responses = array();
 
         foreach ($dataFluxSelected as $key => $flux) {

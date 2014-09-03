@@ -6,6 +6,10 @@ use Sportlobster\Bundle\DataBundle\Model\DataInterface;
 
 class DataCollection
 {
+    /**
+     * $collection 
+     * @var array
+     */
     protected $collection = array();
 
     public function add(DataInterface $element)

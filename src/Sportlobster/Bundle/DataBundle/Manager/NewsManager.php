@@ -19,15 +19,20 @@ class NewsManager extends DataManager
 
         foreach ($responses as $key => $response) {
             
-            $items = $response->channel->item;
+            $items = isset($response->channel->item) ? $response->channel->item : array();
 
             foreach ($items as $key => $item) {
 
+                $title = isset($item->title) ? $item->title : null;
+                $description = isset($item->description) ? $item->description : null;
+                $category = isset($item->category) ? $item->category : null;
+                $pubDate = isset($item->pubDate) ? $item->pubDate : null;
+
                 $news = new News();
-                $news->setTitle($item->title);
-                $news->setDescription($item->description);
-                $news->setCategory($item->category);
-                $news->setPupDate($item->pubDate);
+                $news->setTitle($title);
+                $news->setDescription($description);
+                $news->setCategory($category);
+                $news->setPupDate($pubDate);
 
                 $this->collection->add($news);
             }
