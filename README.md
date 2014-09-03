@@ -19,7 +19,11 @@ following options.
 ### Vagrant Environnement
 
 The vagrant proposed here is the vagrant developped by [kleiram/vagrant-symfony][3].
-To use it, follow [this instructions][4] 
+To use it, go to /vagrant folder, and run this command:
+
+    vagrant up
+
+If you have any problem, follow [this instructions][4].
 
 ### Use Composer to install vendors
 
