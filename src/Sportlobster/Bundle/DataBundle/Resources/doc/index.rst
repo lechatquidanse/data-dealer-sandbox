@@ -27,6 +27,6 @@ Key Features include:
 .. _DataManager: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Manager/DataManager.php
 .. _DataLoader: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Loader/DataLoader.php
 .. _NewsManager: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Manager/NewsManager.php
-.. _NewsManager: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Collection/DataCollection.php
+.. _collection: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Collection/DataCollection.php
 .. _News: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Model/News.php
 .. _file: https://github.com/lechatquidanse/data-dealer-sandbox/blob/master/src/Sportlobster/Bundle/DataBundle/Resources/data/flux/newsFlux.xml
